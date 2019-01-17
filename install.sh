@@ -7,7 +7,7 @@ function install_dotfile(){
     echo ""
 }
 
-for dotfile in .zshrc .vimrc
+for dotfile in .zshrc .vimrc .tmux.conf
 do
     install_dotfile $dotfile
 done
