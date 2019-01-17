@@ -1,11 +1,16 @@
 function install_dotfile(){
+    echo "Installing $1 in ~"
+    echo "[ -f ~/$1 ] && cp ~/$1 ~/$1.old"
     [ -f ~/$1 ] && cp ~/$1 ~/$1.old
+    echo "cp ./$1 ~/$1"
     cp ./$1 ~/$1
+    echo ""
 }
 
-# zsh
-install_dotfile .zshrc
-touch ~/.zsh_profile
+for dotfile in .zshrc .vimrc
+do
+    install_dotfile $dotfile
+done
 
-# vim
-install_dotfile .vimrc
+# zsh specific stuff
+touch ~/.zsh_profile
