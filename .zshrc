@@ -2,7 +2,7 @@
 export ZSH=$HOME/.oh-my-zsh
 
 # Them
-ZSH_THEME="wezm"
+ZSH_THEME="avit"
 
 # History config
 setopt hist_ignore_all_dups
