@@ -2,7 +2,7 @@
 export ZSH=$HOME/.oh-my-zsh
 
 # Them
-ZSH_THEME="theunraveler"
+ZSH_THEME="wezm"
 
 # History config
 setopt hist_ignore_all_dups
